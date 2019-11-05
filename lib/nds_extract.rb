@@ -48,8 +48,10 @@ def movies_with_director_key(name, movies_collection)
     new_hash << movie_with_director_name(name, movies_collection)
     new_hash[:director] = movies_collection 
     counter += 1
+    puts "HI"
   end
   return new_hash
+  
   #
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key. This addition can be done by using the provided
