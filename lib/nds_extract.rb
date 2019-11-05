@@ -44,7 +44,7 @@ def movies_with_director_key(name, movies_collection)
   # * movies_collection: An Array of Hashes where each Hash represents a movie
    counter = 0 
    new_hash = {}
-  while counter < 15
+  while counter < 18
     new_hash << movie_with_director_name(name, movies_collection.to_i)
   end
   return new_hash
