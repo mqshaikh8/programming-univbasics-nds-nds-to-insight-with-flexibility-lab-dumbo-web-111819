@@ -46,7 +46,7 @@ def movies_with_director_key(name, movies_collection)
    new_hash = {}
   while counter < 18
     new_hash << movie_with_director_name(name, movies_collection)
-    new_hash[:director] = movies_collection 
+    new_hash[:director] = movies_collection[counter] 
     counter += 1
     puts "HI"
   end
