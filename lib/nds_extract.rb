@@ -42,7 +42,11 @@ def movies_with_director_key(name, movies_collection)
   # INPUT:
   # * name: A director's name
   # * movies_collection: An Array of Hashes where each Hash represents a movie
-  # Coun
+   counter = 0 
+  while counter < 15
+    new_hash = movie_with_director_name(name, movies_collection)
+  end
+  
   # RETURN:
   #
   # Array of Hashes where each Hash represents a movie; however, they should all have a
