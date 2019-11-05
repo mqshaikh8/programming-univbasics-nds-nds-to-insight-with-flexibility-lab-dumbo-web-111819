@@ -45,7 +45,7 @@ def movies_with_director_key(name, movies_collection)
    counter = 0 
    new_hash = {}
   while counter < 15
-    new_hash << movie_with_director_name(name, movies_collection)
+    new_hash << movie_with_director_name(name, movies_collection.to_i)
   end
   return new_hash
   #
