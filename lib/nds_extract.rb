@@ -44,9 +44,9 @@ def movies_with_director_key(name, movies_collection)
   # * movies_collection: An Array of Hashes where each Hash represents a movie
    counter = 0 
   while counter < 15
-    new_hash = movie_with_director_name(name, movies_collection)
+    new_hash << movie_with_director_name(name, movies_collection)
   end
-  pp new_hash
+  return new_hash
   #
   # Array of Hashes where each Hash represents a movie; however, they should all have a
   # :director_name key. This addition can be done by using the provided
